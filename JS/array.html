@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Array</title>
+</head>
+<body>
+
+<script>
+var arr = prompt('Введите числа через пробел :'), arrResult = [];
+arr = arr.trim().split(/\s+/);
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 3 == 0 && arr[i] != 0) arrResult.push(arr[i]);
+}
+
+alert('Числа кратные 3: \n' + arrResult);
+
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>HelloV</title>
+   <meta charset="UTF-8">
+  <meta name="description" content="HelloV">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Ilya Silich">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ 
+Введите имя: <input id="first_name">
+
+<button id="say">Скажи привет!</button>
+ 
+<hr>
+<div id="result"></div>
+ 
+<script>
+function say_hi() {
+    var name = document.getElementById('first_name').value;
+	
+	if (name == "Вячеслав") {
+  var html = 'Привет, ' + name;
+ 
+    document.getElementById('result').innerHTML = html;
+}
+ else {
+  alert("Нет такого имени");
+}
+    
+}
+ 
+document.getElementById('say').addEventListener('click', say_hi);
+</script>
+ 
+</body>
+</html>
